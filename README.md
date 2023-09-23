@@ -1,0 +1,1 @@
+This is a sample portfolio website designed with html, css, and some javascript for functionality and improved user experience.
