@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!--------------------------The Header Section------------------------------------------------------> 
+   <div id="header">
+       <div class="container">
+           <nav>
+               <img src="portimg/logo.png" class="logo">
+               <ul id="sidemenu">
+                   <li><a href="#header">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#my-services">Services</a></li>
+                   <li><a href="#my-portfolio">Portfolio</a></li>
+                   <li><a href="#my-contact">Contact</a></li>
+                   <img src="portimg/close 2.png" class="menu1" alt="menu control" onclick="closemenu()">
+               </ul>
+               <img src="portimg/menu.png" class="menu2" alt="menu control" onclick="openmenu()">
+           </nav>
+           <div class="header-text">
+               <p> UI/UX Designer </p>
+               <h1> Hi, I'm <span class="style">Kevin</span> <br>Jen From Australia</h1>
+           </div>
+       </div>
+    </div>
+
+   <!---------------------About Section--------------------------------------------------------------------->
+   <div id="about">
+       <div class="container">
+           <div class="col-1">
+               <img src="portimg/user.png" alt="a picture of the user">
+           </div>
+           <div class="col-2">
+               <h1 class="subtitle"> About Me</h1>
+               <p>I'm a front-end web designer with 4 years of experience, working with web technologies like 
+                   html,css,tailwind css,javascript,react.js. I have worked with a couple of personal
+                   clients, and some major firms as their web master. Creative and proficient in problem solving and designs. </p>
+                   <!-------------tab-titles/tab-links------------------>
+                   <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience </p> 
+                        <p class="tab-links" onclick="opentab('education')"> Education </p>
+                    </div>
+                    <div class="tab-infos active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        </ul>
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development </li>
+                        </ul>
+                        <ul>
+                            <li><span>App Development</span><br>Building Android/IOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-infos" id="experience">
+                        <ul>
+                            <li><span>2021-Current</span><br>UI/UX Design Training at E.T. Institute</li>
+                        </ul>
+                        <ul> 
+                            <li><span>2019-2021</span><br>Team Lead at Star App LLC.</li>
+                        </ul>
+                        <ul>
+                            <li><span>2017-2019</span><br>UI/UX Design Executive at Coin digital Ltd.</li>
+                        </ul>
+                        <ul>
+                            <li><span>2016-2017</span><br> Internship at Ekart oCommerce</li>
+                        </ul>
+                    </div>
+                    <div class="tab-infos" id="education">
+                        <ul>
+                            <li><span>2016</span><br> UI/UX Design Training at ET Institute</li>
+                        </ul>
+                        <ul>
+                            <li><span>2016</span><br>MBA from MIT Massuchetts</li>
+                        </ul>
+                         <ul>
+                            <li><span>2014</span><br> Bsc. from IBM Michigan</li>
+                        </ul>
+                    </div>
+           </div>
+       </div>
+   </div>
+<!-------------------------------------------Services Section-------------------------------------------------->
+    <div id="my-services">
+        <div class="container">
+            <h1 class="subtitle"> My Services </h1>
+            <div class="services-list">
+                <div class="list-info">
+                    <h2> Web Design </h2>
+                    <p>Designing standard and responsive websites,that's creative and properly structured and meets all requirements set by the W3C</p>
+                    <a href="#"> Learn More</a>
+                </div>
+                <div class="list-info">
+                    <h2> UI/UX Design </h2>
+                    <p>Designing the framework,prototype of the website to be created/design. Also designing a website that will ensure excellent user experience</p>
+                    <a href="#"> Learn More</a>
+                </div>
+                <div class="list-info">
+                    <h2> App Design </h2>
+                    <p> Applications with high performance and flexibility,using different technologies like react.js, react native and others to design the user experience of the app</p>
+                    <a href="#"> Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------------------------------Portfolio Section------------------------------------------------>
+    <div id="my-portfolio">
+        <div class="container">
+            <h1 class="subtitle"> My Work </h1> 
+            <div class="works">
+                <div class="work">
+                    <img src="portimg/work-1.png" alt="a picture of my designs">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="portimg/work-2.png" alt="a picture of my designs">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the numerous entertaining music around the world. Download it from play store.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="portimg/work-3.png" alt="a picture of my designs">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the several goods/products for different purposes around the world. Download it from play store.</p>
+                    </div>
+                </div>
+            </div> 
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!----------------------Contact Form Section--------------------------------------------------->
+    <div id="my-contact">
+        <div class="container">
+            <div class="contact-form">
+                <div class="contact-left">
+                    <h2> Contact Me</h2>
+                    <p>kevinjen@gmail.com</p>
+                    <p>+(355)-011349527</p>
+                    <img src="portimg/fb.png" alt="logo of facebook">
+                    <img src="portimg/tw.png" alt="logo of twitter">
+                    <img src="portimg/ig.png" alt="logo of instagram">
+                    <a href="portimg/my-cv.pdf" download class="btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------------------Copyright------------------------------------------------>
+    <div class="copyright">
+        <p>Copyright &copy; Kevin Made by &#8594 don_preshP</p>
+    </div>
+
+
+
+
+
+   <script>
+       let tablinks = document.getElementsByClassName("tab-links");
+       let tabinfos = document.getElementsByClassName("tab-infos");
+
+       function opentab(tabname){
+           for(tablink of tablinks){
+               tablink.classList.remove("active-link");   
+           }
+           for(tabinfo of tabinfos){
+               tabinfo.classList.remove("active-tab");
+           }
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab");
+       }
+   </script>
+
+<script>
+    let sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.left = "200px";
+    }
+
+    function closemenu(){
+        sidemenu.style.left = "-200px";
+    }
+
+</script>
+</body>
+</html>
